@@ -8,6 +8,10 @@ const { Member } = db;
 
 app.use(express.json()); // express.json() : middleware
 
+app.get('/', (req, res) => {
+  res.send('URL should contain /api/..');
+});
+
 app.get('/api/members', async (req, res) => {
   const { team } = req.query;
   if (team) {

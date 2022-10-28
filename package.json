@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3",
+    "sequelize-cli": "^6.5.1"
+  },
+  "name": "codeit_node_study",
+  "version": "1.0.0",
+  "description": "basic node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "migrate": "sequelize db:migrate",
+    "seed": "sequelize db:seed:all"
+  },
+  "keywords": [
+    "Node.js"
+  ],
+  "author": "",
+  "license": "ISC"
+}

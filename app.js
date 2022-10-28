@@ -18,7 +18,7 @@ app.get('/api/members', async (req, res) => {
     res.send(teamMembers);
   } else {
     const members = await Member.findAll({
-      order: [['admissionDate', 'DESC']],
+      // order: [['admissionDate', 'DESC']],
     });
     res.send(members);
   }
